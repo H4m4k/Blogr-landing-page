@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/CSS/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | [Blogr]</title>
 
@@ -14,13 +18,14 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
 
   <header>
-    <div class="logo">BLOGR</div>
-
+    <div class="logo"><strong>Blogr</strong></div>
+    <img src="/images/bg-pattern-intro.svg" alt="">
     <nav>
-      <section>
+      <section class="section off">
         <h5>Product</h5>
           <ul>
             <li>Overview</li>
@@ -30,7 +35,7 @@
             <li>Integrations</li>
           </ul>
       </section>
-      <section>
+      <section class="section off">
         <h5>Company</h5>
           <ul>
             <li>About</li>
@@ -39,7 +44,7 @@
             <li>Careers</li>
           </ul>
       </section>
-      <section>
+      <section class="section off">
         <h5>Connect</h5>
           <ul>
             <li>Contact</li>
@@ -49,7 +54,7 @@
       </section>        
     </nav>
 
-    <div class="login">
+    <div class="login off">
       <ul>
         <li>Login</li>
         <li> Sign Up</li>
@@ -60,8 +65,8 @@
       <h1> A modern publishing platform </h1>
       <h4> Grow your audience and build your online brand </h4>
       <ul>
-        <li>Start for Free</li>
-        <li>Learn More</li>
+        <li class='button transparent_Text grow'>Start for Free</li>
+        <li class='button button_Border grow'>Learn More</li>
       </ul>
     </div>
   </header>
@@ -69,6 +74,7 @@
   <main>
     <div class="top_Main">
       <h2>Designed for the future</h2>
+      <img src="/images/illustration-editor-mobile.svg" alt="">
       <article>
         <h3>Introducing an extensible editor</h3>
         <p> Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
