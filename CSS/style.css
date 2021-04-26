@@ -28,27 +28,15 @@ header > img {
     left: -85%;
 }
 
-.middle_Main {
-    background-color: hsl(237, 23%, 32%);
-}
-
-footer {
-    background: hsl(237, 17%, 21%);
-}
-
-.off {
-    display: none;
-}
 
 .logo {
     font-size: xx-large;
     font-family: 'Ubuntu', sans-serif;
-
+    
     display: flex;
     place-content: space-between;
     padding: 1.5em .8em 2em;
 }
-
 .logo::after {
     content: url(/images/icon-hamburger.svg);
 }
@@ -58,7 +46,6 @@ footer {
     color: black;
     mix-blend-mode: screen;
 }
-
 .transparent_Text::before {
     position: absolute;
     top: 0;
@@ -74,10 +61,9 @@ footer {
 .welcome {
     text-align: center;
     font-family: 'Overpass', sans-serif;
-
+    
     padding: 0 2.5em 8em;
 }
-
 .welcome > h4 { font-weight: lighter; }
 .welcome > ul {
     padding: 0;
@@ -96,6 +82,66 @@ footer {
     padding: .8em .5em;
 }
 
-.grow {
-    flex: 1 auto;
+.grow { flex: 1 auto; }
+
+.top_Main > h2 {
+    padding: 4rem 0 1rem;
 }
+.top_Main > img[src*='editor-mobile'] {
+    width: 100%;
+}
+
+
+.middle_Main {
+    background-color: hsl(238, 21%, 27%);
+    border-radius: 0 5em 0 5em;
+    position: relative;
+    margin-top: 18em;
+}
+.middle_Main > img[src*='phones'] {
+    position: absolute;
+    width: 100%;
+    top: -35%;
+    z-index: 1;
+}
+.middle_Main > div > svg{
+    position: absolute;
+    width: 100%;
+}
+.middle_Main > article {
+    padding: 8rem 0 6rem;
+    position: relative;
+}
+.middle_Main > article > * {
+    color: white;
+}
+.middle_Main  h2 {
+    font-size: 2.2em;
+    padding: 2rem 2rem 0;
+}
+.middle_Main p {
+    text-shadow: unset;
+}
+
+
+h2 {
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+    padding: 2rem 4rem 0;
+}
+
+p {
+    text-align: center;
+    padding: 0px 1.5rem;
+    color: hsl(207.7, 5.6%, 45.7%);
+    font-size: 15px;
+    text-shadow: 1px 1px 1px lightgray;
+    letter-spacing: 1px;
+    padding: 0 2em;
+    line-height: 1.8em;
+}
+
+footer {
+    background: hsl(240, 10%, 16%);
+}
+.off { display: none; }
