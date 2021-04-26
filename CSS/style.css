@@ -104,15 +104,22 @@ header > img {
     top: -35%;
     z-index: 1;
 }
-.middle_Main > div > svg{
-    position: absolute;
-    width: 100%;
+.middle_Main > .overflow {
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 5em 0 5em;
 }
-.middle_Main > article {
+.middle_Main > .overflow > svg{
+    position: absolute;
+    width: 160%;
+    transform: translate(-50%);
+    left: 50%;
+}
+.middle_Main > .overflow > article {
     padding: 8rem 0 6rem;
     position: relative;
 }
-.middle_Main > article > * {
+.middle_Main > .overflow > article > * {
     color: white;
 }
 .middle_Main  h2 {
