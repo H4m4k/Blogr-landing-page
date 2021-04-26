@@ -8,8 +8,10 @@ html, body {
     font-family: 'Overpass', sans-serif;
     /*font-family: 'Ubuntu', sans-serif;*/
     font-size: 16px;
-    
 }
+
+
+
 
 header {
     background-image: linear-gradient(150deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
@@ -19,7 +21,6 @@ header {
     position: relative;
     z-index: 0;
 }
-
 header > img {
     position: absolute;
     height: 230%;
@@ -29,17 +30,18 @@ header > img {
 }
 
 
+
+
 .logo {
-    font-size: xx-large;
-    font-family: 'Ubuntu', sans-serif;
-    
+    font-size: xx-large;    
     display: flex;
     place-content: space-between;
     padding: 1.5em .8em 2em;
 }
-.logo::after {
-    content: url(/images/icon-hamburger.svg);
-}
+.logo::after { content: url(/images/icon-hamburger.svg); }
+
+
+
 
 .transparent_Text {
     position: relative;
@@ -58,6 +60,10 @@ header > img {
     border-radius: 2em;
 }
 
+
+/* C T A - welcome screen */
+
+
 .welcome {
     text-align: center;
     font-family: 'Overpass', sans-serif;
@@ -72,6 +78,10 @@ header > img {
     margin: 3em 0 0 0;
 }
 
+
+/* B U T T O N S */
+
+
 .button_Border { border: 1px solid white; }
 .button {
     width: 50ch;
@@ -82,7 +92,9 @@ header > img {
     padding: .8em .5em;
 }
 
-.grow { flex: 1 auto; }
+
+/* M A I N - top part */
+
 
 .top_Main > h2 {
     padding: 4rem 0 1rem;
@@ -90,6 +102,9 @@ header > img {
 .top_Main > img[src*='editor-mobile'] {
     width: 100%;
 }
+
+
+/* M A I N - middle part */
 
 
 .middle_Main {
@@ -107,7 +122,7 @@ header > img {
 .middle_Main > .overflow {
     overflow: hidden;
     position: relative;
-    border-radius: 0 5em 0 5em;
+    border-radius: inherit;
 }
 .middle_Main > .overflow > svg{
     position: absolute;
@@ -115,20 +130,66 @@ header > img {
     transform: translate(-50%);
     left: 50%;
 }
+.middle_Main .inner_Circle { stroke: #fff; }
 .middle_Main > .overflow > article {
     padding: 8rem 0 6rem;
     position: relative;
 }
-.middle_Main > .overflow > article > * {
-    color: white;
-}
+.middle_Main > .overflow > article > * { color: white; }
 .middle_Main  h2 {
     font-size: 2.2em;
     padding: 2rem 2rem 0;
 }
-.middle_Main p {
-    text-shadow: unset;
+.middle_Main p { text-shadow: unset; }
+
+
+/* M A I N - bottom part */
+
+
+.bottom_Main{
+    margin: 7vh 0 10vh 0;
 }
+.bottom_Main > img[src*='laptop'] {
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+
+/* F O O T E R */
+
+
+footer {
+    background: hsl(240, 10%, 16%);
+    padding: 0 0 5vh;
+    border-radius: 0 5em 0 0;
+}
+footer > .logo_Footer {
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2em 0 0;
+    color: #fff;
+}
+footer > section {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: hsl(240, 2%, 79%);
+}
+footer > section > h3 {
+    font-weight: lighter;
+    color: #fff;
+    margin: 6.5vh 0 4vh;
+}
+footer > section > ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer > section > ul > li {
+    margin: 1vh 0;
+}
+
+/* U T I L I Y */
 
 
 h2 {
@@ -148,7 +209,5 @@ p {
     line-height: 1.8em;
 }
 
-footer {
-    background: hsl(240, 10%, 16%);
-}
 .off { display: none; }
+.grow { flex: 1 auto; }
