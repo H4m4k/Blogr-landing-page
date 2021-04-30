@@ -39,7 +39,10 @@ header > img {
     place-content: space-between;
     padding: 1.5em .8em 2em;
 }
-.logo::after { content: url(/images/icon-hamburger.svg); }
+.logo::after { 
+    content: url(/images/icon-hamburger.svg); 
+    cursor: pointer;
+}
 
 
 
