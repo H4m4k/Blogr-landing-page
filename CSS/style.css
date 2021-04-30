@@ -50,6 +50,9 @@ header > img {
 nav {
     background: #fff;
     color: black;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
 }
 nav > section > h2::after {
     content: url(/images/icon-arrow-dark.svg);
@@ -62,7 +65,9 @@ nav ul {
     list-style-type: none;
 }
 nav .login {
-    padding: 1em;
+    padding: .5em 1em;
+    border-top: 1px lightgray solid;
+    margin:1em 2em;
 }
 
 
