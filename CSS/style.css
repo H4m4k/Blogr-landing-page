@@ -51,6 +51,10 @@ nav {
     background: #fff;
     color: black;
 }
+nav > section > h2::after {
+    content: url(/images/icon-arrow-dark.svg);
+    padding: 0 .2rem 0 1rem;
+}
 nav ul {
     text-align: center;
     padding: 0;
