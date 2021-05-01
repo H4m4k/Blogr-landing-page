@@ -75,9 +75,11 @@ nav .login > ul >li{
     font-size: 24px;
     font-weight: bold;
     color: hsl(208, 49%, 24%) ;
+    cursor: pointer;
 }
 nav .login .button {
     width: 100%;
+    font-family: unset;
 }
 
 
