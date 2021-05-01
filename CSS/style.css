@@ -39,9 +39,10 @@ header > img {
     place-content: space-between;
     padding: 1.5em .8em 2em;
 }
-.logo::after { 
-    content: url(/images/icon-hamburger.svg); 
+.logo > img { 
     cursor: pointer;
+    height: 50%;
+    place-self: center;
 }
 
 
@@ -68,6 +69,15 @@ nav .login {
     padding: .5em 1em;
     border-top: 1px lightgray solid;
     margin:1em 2em;
+}
+nav .login > ul >li{
+    padding: 1em 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(208, 49%, 24%) ;
+}
+nav .login .button {
+    width: 100%;
 }
 
 
