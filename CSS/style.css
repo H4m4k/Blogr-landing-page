@@ -58,6 +58,12 @@ nav {
 nav > section {
     border-radius: 10px;
 }
+nav > section > h2 {
+    display: inline-flex;
+}
+nav > section > svg {
+    width: 5%;
+}
 nav > section > ul {
     text-align: center;
     padding: 0;
