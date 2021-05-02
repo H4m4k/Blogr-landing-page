@@ -194,6 +194,7 @@ nav .login .button {
     position: relative;
     transform: translate(-50%);
     left: 50%;
+    width: 100%;
 }
 
 
