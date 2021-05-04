@@ -6,16 +6,13 @@ function show_Menu() {
     nav.classList.toggle('off')
 }
 
-/* const faq_List = document.querySelectorAll('.list');
+const menu_List = document.querySelectorAll('.section_Title');
 
-faq_List.forEach( list => list.addEventListener('click', toggle))
+menu_List.forEach( list => list.addEventListener('click', toggle))
 
-function toggle (event) {
-    let rotate = event.target.children[0].style.transform || 'rotate(0deg)';
-
-    event.target.classList.toggle('addWeight');
-    // event.target.nextElementSibling.classList.toggle('off');
+function toggle () {
+    let rotate = this.children[1].style.transform || 'rotate(0deg)';
     
-    if(rotate === 'rotate(0deg)') return event.target.children[0].style.transform = 'rotate(180deg)'; 
-    return event.target.children[0].style.transform = 'rotate(0deg)'
-} */
+    if(rotate === 'rotate(0deg)') return this.children[1].style.transform = 'rotate(180deg)'; 
+    return this.children[1].style.transform = 'rotate(0deg)'
+}
