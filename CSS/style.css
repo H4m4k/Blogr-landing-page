@@ -58,11 +58,16 @@ nav {
 nav > section {
     border-radius: 10px;
 }
-nav > section > h2 {
-    display: inline-flex;
+.section_Title {
+    display: flex;
+    place-content: center center;
+    padding: 1rem 0 .5rem 0;
 }
-nav > section > svg {
-    width: 5%;
+.section_Title > h2 {
+    padding: 0 1rem;
+}
+.section_Title > svg {
+    width: 1rem;
 }
 nav > section > ul {
     text-align: center;
@@ -70,18 +75,31 @@ nav > section > ul {
     margin: 0;
     list-style-type: none;
     font-size: 20px;
+    font-weight: 600;
+    color: hsl(210, 12%, 42%);
     background-color: lightgray;
     width: 85%;
     margin: 0 auto;
     border-radius: inherit;
+}
+nav > section > ul > li {
+    padding: 1em 0 0 0;
+}
+nav > section > ul > li:last-child {
+    padding: 1em 0 1em 0;
 }
 nav .login {
     padding: .5em 1em;
     border-top: 1px lightgray solid;
     margin:1em 2em;
 }
+nav .login > ul {
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
 nav .login > ul >li{
-    padding: 1em 0;
+    padding: .5em 0;
     font-size: 24px;
     font-weight: bold;
     color: hsl(208, 49%, 24%) ;
@@ -263,3 +281,4 @@ p {
 
 .off { display: none; }
 .grow { flex: 1 auto; }
+.cursor { cursor: pointer; }
