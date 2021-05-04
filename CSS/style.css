@@ -53,7 +53,7 @@ nav {
     color: black;
     border-radius: 10px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
 }
 nav > section {
     border-radius: 10px;
@@ -61,9 +61,10 @@ nav > section {
 .section_Title {
     display: flex;
     place-content: center center;
-    padding: 1rem 0 .5rem 0;
+    padding: 2rem 0 0 0;
 }
 .section_Title > h3 {
+    margin: 0;
     padding: 0 1rem;
 }
 .section_Title > svg {
@@ -80,7 +81,7 @@ nav > section > ul {
     color: hsl(210, 12%, 42%);
     background-color: lightgray;
     width: 85%;
-    margin: 0 auto;
+    margin: 1rem auto 0;
     border-radius: inherit;
 }
 nav > section > ul > li {
