@@ -1,4 +1,5 @@
-* { box-sizing: border-box; }
+* , *::before, *::after
+{ box-sizing: border-box; }
 
 html, body {
     margin: 0;
@@ -99,7 +100,7 @@ nav > section > ul > li:last-child {
 nav .login {
     padding: .5em 1em;
     border-top: 1px lightgray solid;
-    margin:1em 2em;
+    margin:2em 2em 1em;
 }
 nav .login > ul {
     padding: 0;
@@ -294,3 +295,18 @@ p {
 .off { display: none; }
 .grow { flex: 1 auto; }
 .cursor { cursor: pointer; }
+
+
+@media screen and (min-width: 376px) {
+
+    #hamburger { display: none;}
+    header {background-image: linear-gradient(65deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));}
+
+    header > .pattern > img {
+        position: absolute;
+        height: 190em;
+        top: -175vh;
+        z-index: -1;
+        left: -30vw;
+    }
+}
