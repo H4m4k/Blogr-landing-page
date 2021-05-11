@@ -60,7 +60,7 @@ nav {
     left: 50%;
     z-index: 1;
     top: 25%;
-    box-shadow: 0 10px 20px -5px lightgray;
+    
 }
 nav > section {
     border-radius: 10px;
@@ -97,24 +97,24 @@ nav > section > ul > li {
 nav > section > ul > li:last-child {
     padding: 1em 0 1em 0;
 }
-nav .login {
+.login {
     padding: .5em 1em;
     border-top: 1px lightgray solid;
     margin:2em 2em 1em;
 }
-nav .login > ul {
+.login > ul {
     padding: 0;
     text-align: center;
     list-style-type: none;
 }
-nav .login li {
+.login li {
     padding: 1em 0;
     font-size: 18px;
     font-weight: bold;
     color: hsl(208, 49%, 24%) ;
     cursor: pointer;
 }
-nav .login .button {
+.login .button {
     width: 8rem;
     font-family: unset;
     background-image: linear-gradient(90deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
@@ -295,12 +295,75 @@ p {
 .off { display: none; }
 .grow { flex: 1 auto; }
 .cursor { cursor: pointer; }
+#nav_Desktop { display: none;}
+.shadow { box-shadow: 0 10px 20px -5px lightgray;}
 
 
 @media screen and (min-width: 376px) {
 
+    .logo > strong {
+        place-self: center;
+        padding: .5em .8em 2em;
+    }
     #hamburger { display: none;}
-    header {background-image: linear-gradient(65deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));}
+    #nav_Desktop { display: flex;}
+    #nav_Desktop > div > .section_Title > svg {
+        margin: 0 .5em;
+    }
+    #nav_Desktop > div {
+        position: relative;
+    }
+    #nav_Desktop > div > ul {
+        font-size: .9rem;
+        font-weight: normal;
+        position: absolute;
+        padding: 1em 0;
+        list-style-type: none;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        background: #fff;
+        border-radius: .5em;
+        top: 8vh;
+        width: 90%;
+    }
+    #nav_Desktop > div > ul > li:hover {
+        font-weight: bolder;
+    }
+    .section_Title {
+        color: #fff;
+        font-size: .7em;
+        padding: 0 1em;
+    }
+    .section_Title > svg {
+        width: .6rem;
+    }
+    .section_Title > svg > path {
+        stroke: #fff;
+    }
+    .button { 
+        flex: unset;
+        width: max-content;
+    }
+   
+    .welcome > ul {
+        place-content: center;
+    }
+
+    .login { 
+        border: none; 
+        padding: 0;
+        margin: 0;
+    }
+    .login > ul { display: flex;}
+    .login .button,
+    .login > ul > li {
+        margin: 0 2em;
+    }
+
+    header {
+        background-image: linear-gradient(65deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    }
 
     header > .pattern > img {
         position: absolute;
@@ -309,4 +372,15 @@ p {
         z-index: -1;
         left: -30vw;
     }
+
+    nav {
+        background: transparent;
+        margin: 0;
+        box-shadow: none;
+        position: static;
+        transform: unset;
+    }
+
+    
+    
 }

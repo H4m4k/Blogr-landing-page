@@ -1,7 +1,7 @@
 const menu = document.querySelector('#hamburger');
 menu.addEventListener('click', show_Menu);
 
-const nav = document.querySelector('#nav');
+const nav = document.querySelector('#nav_Mobile');
 function show_Menu() {
     nav.classList.toggle('off')
 }
