@@ -355,7 +355,16 @@ p {
         padding: 0;
         margin: 0;
     }
-    .login > ul { display: flex;}
+    .login > ul { 
+        display: flex;
+        place-items: center;
+    }
+    .login li { color: #fff;}
+    .login .button { 
+        background-image: none;
+        background-color: #fff;
+        color: #ff4356;
+    }
     .login .button,
     .login > ul > li {
         margin: 0 2em;
