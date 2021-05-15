@@ -111,7 +111,7 @@ nav > section > ul > li:last-child {
     padding: 1em 0;
     font-size: 18px;
     font-weight: bold;
-    color: hsl(208, 49%, 24%) ;
+    color: hsl(208, 49%, 24%);
     cursor: pointer;
 }
 .login .button {
@@ -297,15 +297,24 @@ p {
 .cursor { cursor: pointer; }
 #nav_Desktop { display: none;}
 .shadow { box-shadow: 0 10px 20px -5px lightgray;}
+.coral_Text { color: #ffcfc6; }
 
 
 @media screen and (min-width: 376px) {
 
+    body {
+        display: grid;
+        grid-template: repeat(5 , min-content) / auto;
+    }
+    .logo { padding: 1em .8em 2em;}
     .logo > strong {
         place-self: center;
         padding: .5em .8em 2em;
     }
+
     #hamburger { display: none;}
+    
+    
     #nav_Desktop { display: flex;}
     #nav_Desktop > div > .section_Title > svg {
         margin: 0 .5em;
@@ -330,6 +339,8 @@ p {
     #nav_Desktop > div > ul > li:hover {
         font-weight: bolder;
     }
+    
+    
     .section_Title {
         color: #fff;
         font-size: .7em;
@@ -341,25 +352,34 @@ p {
     .section_Title > svg > path {
         stroke: #fff;
     }
+
     .button { 
         flex: unset;
         width: max-content;
     }
    
+
     .welcome > ul {
         place-content: center;
     }
+    .welcome > ul > li {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
 
     .login { 
         border: none; 
         padding: 0;
         margin: 0;
     }
+    .login li {
+        color: inherit;
+    }
     .login > ul { 
         display: flex;
         place-items: center;
     }
-    .login li { color: #fff;}
     .login .button { 
         background-image: none;
         background-color: #fff;
@@ -368,12 +388,18 @@ p {
     .login .button,
     .login > ul > li {
         margin: 0 2em;
+        font-size: 1rem;
+        font-weight: bolder;
     }
+    .login > ul > li.button:hover {
+        background-color: #ff7a85;
+
+    }
+
 
     header {
         background-image: linear-gradient(65deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
     }
-
     header > .pattern > img {
         position: absolute;
         height: 190em;
@@ -391,5 +417,34 @@ p {
     }
 
     
+    ul > li.button_Border:hover { 
+        background-color: white;
+        color: #ff7a85;
+    }
+    ul > li.transparent_Text:hover{
+        background-color: #ff7a85;
+        color: #fff;
+    }
     
+    
+    div > h6.coral_Text:hover,
+    footer > section > ul > li:hover {
+        text-decoration: underline;
+    }
+    .button {padding: .8em 1em}
+    
+
+
+    .top_Main {
+        display: grid;
+        grid-template: repeat(4,max-content) / repeat(2,50%);
+    }
+    .top_Main > h2:nth-child(1) {
+        grid-area: 1/1 / 2/3;
+    }
+    .top_Main > img:nth-child(2) {
+        grid-area: 1/2 / 5/3;
+        content: url('/images/illustration-editor-desktop.svg');
+    }
+  
 }
