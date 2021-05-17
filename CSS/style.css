@@ -59,7 +59,7 @@ nav {
     transform: translate(-50%);
     left: 50%;
     z-index: 1;
-    top: 25%;
+    top: 20%;
     
 }
 nav > section {
@@ -68,7 +68,7 @@ nav > section {
 .section_Title {
     display: flex;
     place-content: center center;
-    padding: 3rem 0 0 0;
+    padding: 1rem 0 0 0;
 }
 .section_Title > h3 {
     margin: 0;
@@ -259,7 +259,7 @@ footer > section {
     text-align: center;
     color: hsl(240, 2%, 79%);
 }
-footer > section > h3 {
+footer > section > h4 {
     font-weight: lighter;
     color: #fff;
     margin: 6.5vh 0 4vh;
@@ -275,7 +275,7 @@ footer > section > ul > li {
 /* U T I L I Y */
 
 
-h2, h3 {
+h2, h4 {
     color: hsl(208, 49%, 24%);
     text-align: center;
     padding: 2rem 4rem 0;
@@ -298,6 +298,17 @@ p {
 #nav_Desktop { display: none;}
 .shadow { box-shadow: 0 10px 20px -5px lightgray;}
 .coral_Text { color: #ffcfc6; }
+.desktop { display: none;}
+
+
+
+
+/*////////////////*/
+/* D E S K T O P */
+/*//////////////*/
+
+
+
 
 
 @media screen and (min-width: 376px) {
@@ -427,24 +438,33 @@ p {
     }
     
     
-    div > h6.coral_Text:hover,
-    footer > section > ul > li:hover {
-        text-decoration: underline;
-    }
-    .button {padding: .8em 1em}
     
-
-
+    
+    
     .top_Main {
         display: grid;
-        grid-template: repeat(4,max-content) / repeat(2,50%);
+        grid-template: repeat(4,max-content) / 65% 35%;
+        overflow: hidden;
     }
     .top_Main > h2:nth-child(1) {
         grid-area: 1/1 / 2/3;
     }
-    .top_Main > img:nth-child(2) {
+    .top_Main > img.desktop {
         grid-area: 1/2 / 5/3;
-        content: url('/images/illustration-editor-desktop.svg');
+        padding: 3rem 0;
     }
-  
+
+    .middle_Main {
+        margin: 0;
+    }
+    .middle_Main article > h2 {
+        font-size: 1.5rem;
+    }
+
+    h2 {font-size: 2rem;}
+    div > h6.coral_Text:hover,
+    footer > section > ul > li:hover { text-decoration: underline; }
+    .button {padding: .8em 1em}
+    .mobile {display: none;}
+    .desktop {display: initial;}
 }
