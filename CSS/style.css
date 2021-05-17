@@ -453,18 +453,57 @@ p {
         grid-area: 1/2 / 5/3;
         padding: 3rem 0;
     }
+    .top_Main > h2:first-child {font-size: 2rem;}
+    .top_Main > article > p {
+        width: fit-content;
+        text-align: left;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .top_Main > article {
+        margin: 4rem 10vw 0 18vw;
+    }
+    .top_Main > article > h2 {
+        text-align: left;
+        padding-left: 0;
+    }
 
     .middle_Main {
         margin: 0;
+        display: flex;
+    }
+    .middle_Main > article {
+    
     }
     .middle_Main article > h2 {
         font-size: 1.5rem;
     }
+    .middle_Main > img[src*='phones'] {
+        width: 25%;
+        top: -4vh;
+        left: 18vw;
+    }
+    .middle_Main > .overflow > svg {
+        position: absolute;
+        transform: translate(-50%);
+        left: 20vw;
+        top: -10vh;
+        width: 70vw;
+    }
+    
+    .middle_Main > .overflow > article {
+        padding: 8rem 0 6rem;
+        width: 50vw;
+        margin: 0 0 0 auto;
+    }
 
-    h2 {font-size: 2rem;}
     div > h6.coral_Text:hover,
     footer > section > ul > li:hover { text-decoration: underline; }
+    h1 {font-size: 3,125rem;}
     .button {padding: .8em 1em}
     .mobile {display: none;}
     .desktop {display: initial;}
+    .overflow {width: 100%;}
+    .align_Left {text-align: left;}
+    
 }
