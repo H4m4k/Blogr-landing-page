@@ -453,7 +453,6 @@ p {
         grid-area: 1/2 / 5/3;
         padding: 3rem 0;
     }
-    .top_Main > h2:first-child {font-size: 2rem;}
     .top_Main > article > p {
         width: fit-content;
         text-align: left;
@@ -472,12 +471,6 @@ p {
         margin: 0;
         display: flex;
     }
-    .middle_Main > article {
-    
-    }
-    .middle_Main article > h2 {
-        font-size: 1.5rem;
-    }
     .middle_Main > img[src*='phones'] {
         width: 25%;
         top: -4vh;
@@ -487,23 +480,49 @@ p {
         position: absolute;
         transform: translate(-50%);
         left: 20vw;
-        top: -10vh;
+        top: -15vh;
         width: 70vw;
     }
-    
     .middle_Main > .overflow > article {
-        padding: 8rem 0 6rem;
+        padding: 5rem 20rem 5rem 0;
         width: 50vw;
         margin: 0 0 0 auto;
     }
 
+
+
+
+
+
+    .bottom_Main {
+        display: grid;
+        grid-template: repeat(4,max-content) / 35vw 65vw;
+    }
+    img.desktop:nth-child(2) {
+        grid-area: 1/1 / 5/2;
+    }
+    .bottom_Main > article:nth-child(3) {
+        grid-area: 2/2 / 3/3;
+    }
+    .bottom_Main > article:nth-child(4) {
+        grid-area: 3/2 / 4/3;
+    }
+  
+    .bottom_Main > img[src*='laptop'] {
+        width: initial;
+    }
+
+
+
     div > h6.coral_Text:hover,
-    footer > section > ul > li:hover { text-decoration: underline; }
+    footer > section > ul > li:hover { text-decoration: underline;}
     h1 {font-size: 3,125rem;}
     .button {padding: .8em 1em}
     .mobile {display: none;}
     .desktop {display: initial;}
     .overflow {width: 100%;}
     .align_Left {text-align: left;}
+    .bigger_Font {font-size: 2.5rem;}
+    p {text-align: left;}
     
 }
