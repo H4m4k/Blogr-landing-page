@@ -220,7 +220,7 @@ nav > section > ul > li:last-child {
 .middle_Main > .overflow > article > * { color: white; }
 .middle_Main  h2 {
     font-size: 2.2em;
-    padding: 2rem 2rem 0;
+    padding: 2rem 2rem 0 0;
 }
 .middle_Main p { text-shadow: unset; }
 
@@ -350,7 +350,16 @@ p {
     #nav_Desktop > div > ul > li:hover {
         font-weight: bolder;
     }
+    #nav_Desktop > div > ul > li {
+        padding: 1em 0 0 0;
+    }
+    #nav_Desktop > div > ul :last-child{
+        padding: 1em 0 1em 0;
+    }
     
+
+
+
     
     .section_Title {
         color: #fff;
@@ -370,6 +379,9 @@ p {
     }
    
 
+
+
+
     .welcome > ul {
         place-content: center;
     }
@@ -377,6 +389,9 @@ p {
         font-size: 1rem;
         font-weight: bolder;
     }
+
+
+
 
 
     .login { 
@@ -408,6 +423,8 @@ p {
     }
 
 
+
+
     header {
         background-image: linear-gradient(65deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
     }
@@ -419,6 +436,10 @@ p {
         left: -30vw;
     }
 
+
+
+
+
     nav {
         background: transparent;
         margin: 0;
@@ -428,6 +449,9 @@ p {
     }
 
     
+
+
+
     ul > li.button_Border:hover { 
         background-color: white;
         color: #ff7a85;
@@ -519,19 +543,20 @@ p {
         text-align: left;
         padding: 2em 2em 0;
     }
-
-
-
-
     div > h6.coral_Text:hover,
     footer > section > ul > li:hover { text-decoration: underline;}
-    h1 {font-size: 4rem;}
+    footer > section > h4 {font-weight: bolder;}
+
+
+
     .button {padding: .8em 1em}
     .mobile {display: none;}
     .desktop {display: initial;}
     .overflow {width: 100%; overflow: hidden;}
     .align_Left {text-align: left;}
     .bigger_Font {font-size: 2.5rem;}
+    h1 {font-size: 4rem;}
+    
     article { margin: 4rem 10vw 0 15vw; }
     article  p {
         text-align: left;
