@@ -220,7 +220,7 @@ nav > section > ul > li:last-child {
 .middle_Main > .overflow > article > * { color: white; }
 .middle_Main  h2 {
     font-size: 2.2em;
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 2rem 0;
 }
 .middle_Main p { text-shadow: unset; }
 
@@ -419,8 +419,9 @@ p {
     }
     .login > ul > li.button:hover {
         background-color: #ff7a85;
-
+        color:#fff;
     }
+
 
 
 
@@ -451,7 +452,7 @@ p {
     
 
 
-
+    
     ul > li.button_Border:hover { 
         background-color: white;
         color: #ff7a85;
