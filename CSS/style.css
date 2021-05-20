@@ -453,19 +453,13 @@ p {
         grid-area: 1/2 / 5/3;
         padding: 3rem 0;
     }
-    .top_Main > article > p {
-        width: fit-content;
-        text-align: left;
-        margin: 0 auto;
-        padding-left: 0;
-    }
     .top_Main > article {
         margin: 4rem 10vw 0 18vw;
     }
-    .top_Main > article > h2 {
-        text-align: left;
-        padding-left: 0;
-    }
+
+
+
+
 
     .middle_Main {
         margin: 0;
@@ -498,8 +492,15 @@ p {
         display: grid;
         grid-template: repeat(4,max-content) / 35vw 65vw;
     }
-    img.desktop:nth-child(2) {
+    .bottom_Main > div {
         grid-area: 1/1 / 5/2;
+        padding: 1rem 0;
+    }
+    .bottom_Main > .overflow > img {
+        position: relative;
+        left: -41%;
+        top: 5%;
+        padding: 0 0 1.2em 0;
     }
     .bottom_Main > article:nth-child(3) {
         grid-area: 2/2 / 3/3;
@@ -507,10 +508,18 @@ p {
     .bottom_Main > article:nth-child(4) {
         grid-area: 3/2 / 4/3;
     }
-  
-    .bottom_Main > img[src*='laptop'] {
-        width: initial;
+    
+
+
+    footer { 
+        display: flex;
+        gap: 12em;
     }
+    footer > .logo_Footer {
+        text-align: left;
+        padding: 2em 2em 0;
+    }
+
 
 
 
@@ -520,9 +529,20 @@ p {
     .button {padding: .8em 1em}
     .mobile {display: none;}
     .desktop {display: initial;}
-    .overflow {width: 100%;}
+    .overflow {width: 100%; overflow: hidden;}
     .align_Left {text-align: left;}
     .bigger_Font {font-size: 2.5rem;}
-    p {text-align: left;}
+    article { margin: 4rem 10vw 0 15vw; }
+    article  p {
+        text-align: left;
+        width: fit-content;
+        text-align: left;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+   article > h2 {
+        text-align: left;
+        padding-left: 0;
+    }
     
 }
