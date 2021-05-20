@@ -525,7 +525,7 @@ p {
 
     div > h6.coral_Text:hover,
     footer > section > ul > li:hover { text-decoration: underline;}
-    h1 {font-size: 3,125rem;}
+    h1 {font-size: 4rem;}
     .button {padding: .8em 1em}
     .mobile {display: none;}
     .desktop {display: initial;}
