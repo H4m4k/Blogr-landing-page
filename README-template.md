@@ -29,20 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Blogr landing page](https://github.com/H4m4k/Blogr-landing-page/blob/main/Screenshot%202021-07-22%20at%2016-52-54%20Frontend%20Mentor%20%5BBlogr%5D.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Blogr landing page](https://www.frontendmentor.io/solutions/have-used-flex-grid-positioning-and-some-js-conditions-RZjmnmoRF)
+- Live Site URL: [Live site](https://blogr-landing-page-cyan.vercel.app/)
 
 ## My process
 
@@ -52,60 +44,28 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Desktop-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+  My first thought about this challenge was that it is easy, and because of that I did not plan well enough. I did not realize how important it is to plan your work well and that experience in building websites is one of the most important apsects of FrontEnd because it allows the developer to increase effectivness of his work. Experience plays a key role in building the website, as well as elements that come togheter into a website, such as, CSS classes that control display of elements fro desktop and mobile website. What is also important is that experience plays a key role in looking for answers when encoutering a problem. If You have experienced problem similar or related to the one at hand, you probably know where to look for answers or at least have and idea where to start.
+  
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+My focus for a few next months is still performing the Frontend Mentor challenges, because that is the base of my experience building process.
+At the same time I am learning from JavaScript course to prepare properly for a framework.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Things to learn for now are:
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- JS course needs to be finished - 35 of 42 chapters done
+- 5 FrontEnd Mentor Junior challenges
+- Use git constantly
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - - Frontend Mentor - [@H4m4k](https://www.frontendmentor.io/profile/H4m4k)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
